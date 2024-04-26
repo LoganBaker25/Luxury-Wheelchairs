@@ -1,144 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <header class="header">
-    <a href="#" class="logo">Fauteuil Roulant De Luxe</a>
-    <nav class="nav-items">
-      <a href="index.html">Home</a>
-      <a href="sales.html">About</a>
-      <a href="contact1.html">Contact</a>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Purchase Wheelchairs</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://via.placeholder.com/1500x800'); /* Replace this URL with your desired background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: rgba(54, 139, 193, 0.8); /* Background color with opacity */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333; /* Heading color */
+    }
+
+    .product {
+      display: flex;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .product img {
+      max-width: 200px;
+      height: auto;
+      border-right: 1px solid #ddd;
+    }
+
+    .product-info {
+      flex-grow: 1;
+      padding: 10px;
+    }
+
+    .product-info h2 {
+      margin-top: 0;
+      color: #555; /* Product title color */
+    }
+
+    .product-info p {
+      margin: 5px 0;
+      color: #777; /* Product description color */
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 8px 16px;
+      margin-top: 10px;
+      background-color: #368BC1;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #368BC1;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: rgba(54, 139, 193, 0.8); /* Footer background color with opacity */
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Fauteuil Roulant De Luxe</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sales.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact1.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Purchase Wheelchairs</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .product {
-            display: flex;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            overflow: hidden;
-            background-color: #fff;
-        }
-        .product img {
-            max-width: 200px;
-            height: auto;
-            border-right: 1px solid #ddd;
-        }
-        .product-info {
-            flex-grow: 1;
-            padding: 10px;
-        }
-        .product-info h2 {
-            margin-top: 0;
-        }
-        .product-info p {
-            margin: 5px 0;
-        }
-        .btn {
-            display: inline-block;
-            padding: 8px 16px;
-            margin-top: 10px;
-            background-color: #4CAF50;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background-color: #45a049;
-        }
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Purchase Wheelchairs</h1>
-        <div class="product">
-            <img src="https://pics.craiyon.com/2023-09-15/77590e0bb4c243179f9405640af4758c.webp" alt="img1">
-            <div class="product-info">
-                <h2>Buggati Model</h2>
-                <p>
-                    Introducing the epitome of opulence in mobility aids: the Bugatti Luxury Wheelchair. Melding cutting-edge engineering with sumptuous comfort, this wheelchair transcends conventional expectations, promising an experience akin to gliding on air..</p>
-                <p>Price: $750,000</p>
-                <button class="btn">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="https://www.disabled-world.com/pics/1/lamborghini-wheelchair-1.jpg" alt="Wheelchair 2">
-            <div class="product-info">
-                <h2>Lamborghini Model</h2>
-                <p>Introducing the Lamborghini Wheelchair, where unparalleled style meets exceptional functionality, embodying the essence of automotive excellence in a mobility aid.
-
-                    Crafted with the precision and finesse synonymous with the Lamborghini brand, this wheelchair stands as a beacon of innovation and luxury. Its sleek and aerodynamic design, inspired by Lamborghini's iconic supercars, commands attention with its striking lines and impeccable detailing..</p>
-                <p>Price: $500,000,000</p>
-                <button class="btn">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="https://www.disabled-world.com/pics/1/rollsroyce-wheelchair-3.jpg" alt="Wheelchair 3">
-            <div class="product-info">
-                <h2>Rolls Royce Model</h2>
-                <p>Presenting the Rolls-Royce Wheelchair, an embodiment of timeless elegance and unparalleled luxury in the realm of mobility aids.
-
-                    Inspired by the legendary craftsmanship of Rolls-Royce motor cars, this wheelchair exudes sophistication from every angle. Its design, a masterpiece of artistry and engineering, pays homage to the iconic aesthetic of the Rolls-Royce marque, with graceful curves and refined accents that capture the essence of luxury..</p>
-                <p>Price: $800,000</p>
-                <button class="btn">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="https://th.bing.com/th/id/OIP.CJkduzul5fCRxAU2QRoNnAHaHa?rs=1&pid=ImgDetMain" alt="Wheelchair 4">
-            <div class="product-info">
-                <h2>Golden Model</h2>
-                <p>Introducing the epitome of luxury in mobility: the Golden Wheelchair, a symbol of prestige and extravagance that elevates the concept of personal mobility to unparalleled heights.
-
-                    Crafted with meticulous attention to detail, this wheelchair is adorned with opulent golden accents, reminiscent of ancient royalty and modern splendor. Each element, from the gleaming frame to the intricate detailing, exudes an aura of grandeur and sophistication..</p>
-                <p>Price: $2,000,000,000</p>
-                <button class="btn">Add to Cart</button>
-            </div>
-        </div>
-
-        <div class="product">
-            <img src="https://th.bing.com/th/id/OIP.Lhl-asP1_OGFNECLiArqPQHaHa?rs=1&pid=ImgDetMain" alt="Wheelchair 5">
-            <div class="product-info">
-                <h2>De Luxe Model</h2>
-                <p>Introducing the epitome of French elegance in mobility: the Luxury French Wheelchair, a harmonious blend of sophistication, style, and functionality.
-
-                    Crafted with the finesse and savoir-faire synonymous with French craftsmanship, this wheelchair stands as a testament to exquisite design and attention to detail. Its graceful lines and refined aesthetics pay homage to the timeless elegance of French artistry, elevating the concept of mobility to a new level of refinement..</p>
-                <p>Price: $50,000</p>
-                <button class="btn">Add to Cart</button>
-            </div>
-        </div>
+  <div class="container">
+    <h1>Purchase Wheelchairs</h1>
+    <div class="product">
+      <img src="https://pics.craiyon.com/2023-09-15/77590e0bb4c243179f9405640af4758c.webp" alt="img1">
+      <div class="product-info">
+        <h2>Buggati Model</h2>
+        <p>
+          Introducing the epitome of opulence in mobility aids: the Bugatti Luxury Wheelchair. Melding cutting-edge engineering with sumptuous comfort, this wheelchair transcends conventional expectations, promising an experience akin to gliding on air..</p>
+        <p>Price: $750,000</p>
+        <button class="btn">Add to Cart</button>
+      </div>
     </div>
-    
-    <footer>
-        &copy; 2024 Purchase Wheelchairs
-    </footer>
+
+    <div class="product">
+      <img src="https://www.disabled-world.com/pics/1/lamborghini-wheelchair-1.jpg" alt="Wheelchair 2">
+      <div class="product-info">
+        <h2>Lamborghini Model</h2>
+        <p>Introducing the Lamborghini Wheelchair, where unparalleled style meets exceptional functionality, embodying the essence of automotive excellence in a mobility aid.
+
+          Crafted with the precision and finesse synonymous with the Lamborghini brand, this wheelchair stands as a beacon of innovation and luxury. Its sleek and aerodynamic design, inspired by Lamborghini's iconic supercars, commands attention with its striking lines and impeccable detailing..</p>
+        <p>Price: $500,000,000</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://www.disabled-world.com/pics/1/rollsroyce-wheelchair-3.jpg" alt="Wheelchair 3">
+      <div class="product-info">
+        <h2>Rolls Royce Model</h2>
+        <p>Presenting the Rolls-Royce Wheelchair, an embodiment of timeless elegance and unparalleled luxury in the realm of mobility aids.
+
+          Inspired by the legendary craftsmanship of Rolls-Royce motor cars, this wheelchair exudes sophistication from every angle. Its design, a masterpiece of artistry and engineering, pays homage to the iconic aesthetic of the Rolls-Royce marque, with graceful curves and refined accents that capture the essence of luxury..</p>
+        <p>Price: $800,000</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://th.bing.com/th/id/OIP.CJkduzul5fCRxAU2QRoNnAHaHa?rs=1&pid=ImgDetMain" alt="Wheelchair 4">
+      <div class="product-info">
+        <h2>Golden Model</h2>
+        <p>Introducing the epitome of luxury in mobility: the Golden Wheelchair, a symbol of prestige and extravagance that elevates the concept of personal mobility to unparalleled heights.
+
+          Crafted with meticulous attention to detail, this wheelchair is adorned with opulent golden accents, reminiscent of ancient royalty and modern splendor. Each element, from the gleaming frame to the intricate detailing, exudes an aura of grandeur and sophistication..</p>
+        <p>Price: $2,000,000,000</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+
+    <div class="product">
+      <img src="https://th.bing.com/th/id/OIP.Lhl-asP1_OGFNECLiArqPQHaHa?rs=1&pid=ImgDetMain" alt="Wheelchair 5">
+      <div class="product-info">
+        <h2>De Luxe Model</h2>
+        <p>Introducing the epitome of French elegance in mobility: the Luxury French Wheelchair, a harmonious blend of sophistication, style, and functionality.
+
+          Crafted with the finesse and savoir-faire synonymous with French craftsmanship, this wheelchair stands as a testament to exquisite design and attention to detail. Its graceful lines and refined aesthetics pay homage to the timeless elegance of French artistry, elevating the concept of mobility to a new level of refinement..</p>
+        <p>Price: $50,000</p>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Purchase Wheelchairs
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
+
